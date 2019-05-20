@@ -1,12 +1,21 @@
 import Sequelize from 'sequelize';
 
-const sequelize = new Sequelize(process.env.TEST_DB || 'reactchallenge', 'postgres', 'postgres', {
-  dialect: 'postgres',
-  operatorsAliases: Sequelize.Op,
-  define: {
-    underscored: true,
-  },
-});
+require('dotenv').config();
+ 
+const sequelize = new Sequelize(
+  "reactTest",
+  "reactchallenge99",
+  "nSq[:Bs*(6Qc",
+  {
+    dialect: "postgres",
+    protocol: "postgres",
+    host: "reactchallenge.cir50xfieur0.us-east-2.rds.amazonaws.com",
+    operatorsAliases: Sequelize.Op,
+    define: {
+      underscored: true
+    }
+  }
+);
 
 const models = {
   User: sequelize.import('./user'),

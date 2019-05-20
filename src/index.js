@@ -8,7 +8,7 @@ import cors from 'cors';
 import jwt from 'jsonwebtoken';
 import models from './models';
 import { refreshTokens } from './auth';
-
+ 
 const SECRET = 'asiodfhoi1hoi23jnl1kejd';
 const SECRET2 = 'asiodfhoi1hoi23jnl1kejasdjlkfasdd';
 
@@ -65,6 +65,6 @@ app.use(
 
 app.use('/graphiql', graphiqlExpress({ endpointURL: graphqlEndpoint }));
 
-models.sequelize.sync({force: !!process.env.TEST_DB }).then(() => {
-  app.listen(8081);
+models.sequelize.sync({ force: !!process.env.TEST_DB }).then(() => {
+  app.listen(process.env.PORT || 8081);
 });
