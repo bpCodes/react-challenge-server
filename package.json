@@ -48,7 +48,7 @@
     "graphql": "^14.0.2",
     "graphql-tools": "^4.0.3",
     "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "merge-graphql-schemas": "^1.5.8",
     "pg": "^7.7.1",
     "qs-middleware": "^1.0.3",
