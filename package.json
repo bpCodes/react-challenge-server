@@ -52,7 +52,7 @@
     "merge-graphql-schemas": "^1.5.8",
     "pg": "^7.7.1",
     "qs-middleware": "^1.0.3",
-    "sequelize": "^4.42.0",
+    "sequelize": "^5.15.1",
     "sequelize-cli": "^5.4.0"
   }
 }
