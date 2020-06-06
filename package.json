@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.0.0",
-    "apollo-server-express": "1",
+    "apollo-server-express": "2",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.18.3",
     "connect": "^3.6.6",
